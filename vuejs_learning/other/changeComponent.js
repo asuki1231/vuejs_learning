@@ -1,8 +1,21 @@
+var mixin = {
+  created: function() {
+    this.hello();
+  },
+  methods: {
+    hello: function() {
+      console.log('hello from mixin');
+    }
+  }
+};
+
 Vue.component('my-component-a', {
+  mixins: [mixin],
   template: '<div class="my-component-a">component A</div>'
 });
 
 Vue.component('my-component-b', {
+  mixins: [mixin],
   template: '<div class="my-component-b">component B</div>'
 });
 
@@ -19,3 +32,6 @@ new Vue({
     }
   }
 });
+
+// mixin
+// 別々のコンポーネントで同じ処理をしている場合、共通化した処理を混ぜ込める
