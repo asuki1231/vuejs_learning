@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-.v-enter-active,
-.v-leave-active {
+.demo-enter-active,
+.demo-leave-active {
   transition: opacity 1s;
 }
 
-.v-enter,
-.v-leave-to {
+.demo-enter,
+.demo-leave-to {
   opacity: 0;
 }

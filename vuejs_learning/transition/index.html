@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <div id="app">
       <p><button v-on:click="show=!show">change</button></p>
-      <transition>
+      <transition name="demo">
         <div v-show="show">elm</div>
       </transition>
     </div>
